@@ -1,0 +1,26 @@
+# Root
+node_modules/
+.env
+.env.local
+.env.production
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Build caches
+.vite/
+*.tsbuildinfo

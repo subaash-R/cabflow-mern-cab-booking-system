@@ -1,0 +1,19 @@
+{
+  "name": "cab-booking-system",
+  "version": "1.0.0",
+  "description": "Full MERN Stack Cab Booking System - CabFlow",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "start": "concurrently --names \"API,CLIENT\" --prefix-colors \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["mern", "cab-booking", "react", "express", "mongodb", "node"],
+  "author": "Subaash",
+  "license": "MIT"
+}
